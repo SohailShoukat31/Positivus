@@ -1,0 +1,395 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  width: 100%;
+  height: auto;
+  border: 2px solid black;
+}
+/* Header */
+.header {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 1.4rem;
+  font-family: "Space Grotesk", sans-serif;
+}
+.header .left {
+  padding: 10px;
+}
+.header .mid ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  gap: 25px;
+  padding: 10px;
+}
+.header .mid ul a {
+  text-decoration: none;
+  color: black;
+}
+.header .mid ul a :hover {
+  text-decoration: underline;
+  color: rgb(203, 76, 76);
+}
+.header .right {
+  border: 1px solid black;
+  padding: 14px;
+  border-radius: 10px;
+  background-color: rgb(241, 244, 247);
+}
+
+/*Header End */
+
+/* Hero Section  Start*/
+.container {
+  font-family: "Space Grotesk", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+  gap: 3px;
+}
+
+.left-section {
+  width: 50%;
+}
+.right-section {
+  width: 50%;
+}
+
+.left-section .heading {
+  width: 350px;
+  font-size: 1.6rem;
+}
+.left-section .para {
+  margin-top: 10px;
+  width: 580px;
+  font-size: 1.8rem;
+}
+
+.left-section .btn {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 17px;
+  width: 200px;
+  margin-top: 20px;
+  background-color: black;
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  color: white;
+}
+
+.btn:hover {
+  background: none;
+  color: black;
+  border: 3px solid black;
+}
+.right-section img {
+  height: 400px;
+}
+
+/* Clints Section */
+#client-section::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.89;
+}
+#clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#clients img {
+  height: 110px;
+}
+.client-item {
+  padding: 34px;
+}
+
+.middle {
+  font-family: "Space Grotesk", sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 23px;
+  gap: 4px;
+}
+.service {
+  background-color: rgb(127, 241, 127);
+  border: none;
+  border-radius: 10px;
+  padding: 2px 14px 2px 14px;
+}
+.main-box {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  gap: 22px;
+  margin: 10px;
+  height: 300px;
+}
+.box-one {
+  width: 50%;
+  border: 2px solid rgb(25, 18, 18);
+  border-radius: 17px;
+  border-bottom: 4px solid black;
+}
+.box-one h3 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 23px;
+
+  margin-top: 10px;
+  margin-left: 12px;
+}
+.box-one img {
+  height: 150px;
+  margin-left: 320px;
+  margin-top: 30px;
+}
+
+.box-two {
+  width: 50%;
+  border: 2px solid rgb(25, 18, 18);
+  border-radius: 17px;
+  border-bottom: 2px solid black;
+  background-color: rgb(127, 241, 127);
+}
+
+.box-two h3 {
+  color: white;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 23px;
+
+  margin-top: 10px;
+  margin-left: 12px;
+}
+.box-two img {
+  height: 150px;
+  margin-left: 320px;
+  margin-top: 30px;
+}
+.box-two a {
+  height: 100px;
+  border: 3px solid red;
+}
+
+.card {
+  /* text-align: center; */
+  font-size: 1.9rem;
+  border: 1px solid black;
+  border-bottom: 4px solid black;
+  height: 200px;
+  border-radius: 10px;
+  gap: px;
+  margin: 10px;
+}
+.card i {
+  font-size: 38px;
+  border: 2px solid black;
+  border-radius: 50%;
+  margin-left: 600px;
+}
+.card:hover {
+  background-color: rgb(127, 241, 127);
+  border-bottom: 6px black solid;
+}
+
+/* Contact Section */
+#contact {
+  position: relative;
+}
+#contact::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  background: url("./images/contact.png") no-repeat center center/cover;
+}
+#contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 34px;
+}
+#contact-box form {
+  width: 40%;
+}
+#contact-box label {
+  font-size: 1.3rem;
+  font-family: "Bree Serif", serif;
+}
+#contact-box input,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 10px;
+  font-size: 1.1rem;
+}
+.form-group #btn {
+  padding-left: 10px;
+  padding: 17px;
+  color: white;
+  background-color: black;
+}
+.footer-content {
+  font-family: "Space Grotesk", sans-serif;
+  height: 400px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  width: 90%;
+  margin: auto;
+}
+.footer-header {
+  font-size: 29px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.footer-header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  gap: 10px;
+}
+.mid a {
+  text-decoration: none;
+  color: white;
+}
+.mid a:hover {
+  text-decoration: underline;
+}
+
+.social {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-top: 17px;
+  gap: 10px;
+  font-size: 1.7rem;
+}
+.contact-me {
+  background-color: rgba(26, 7, 7, 0.048);
+  border: none;
+  border-radius: 4px;
+}
+.email-me {
+  padding: 30px;
+  background-color: rgba(26, 7, 7, 0.048);
+  border: none;
+  border-radius: 4px;
+  /* border: 3px solid red; */
+  width: 600px;
+}
+.email-me input {
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 10px;
+  width: 230px;
+  padding: 17px 0px;
+}
+.email-me button {
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 10px;
+  width: 230px;
+  padding: 19px 0px;
+  background-color: rgb(127, 241, 127);
+}
+
+.contact-me h2 {
+  background-color: rgb(127, 241, 127);
+  color: black;
+  width: 250px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 10px;
+}
+#copy-right {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Media Queries  */
+@media (max-width: 760px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-section,
+  .right-section {
+    width: 100%;
+  }
+
+  .main-box {
+    flex-direction: column;
+  }
+
+  .box-one,
+  .box-two {
+    width: 100%;
+  }
+
+  .footer-header {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    font-size: 1rem;
+  }
+
+  .container {
+    margin: 15px;
+  }
+
+  .left-section .heading,
+  .left-section .para,
+  .left-section .btn {
+    font-size: 1.2rem;
+  }
+
+  .main-box {
+    flex-direction: column;
+  }
+
+  .box-one,
+  .box-two {
+    width: 100%;
+  }
+
+  #contact-box form {
+    width: 100%;
+  }
+
+  .footer-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-header ul {
+    flex-direction: column;
+  }
+
+  .social {
+    flex-direction: column;
+  }
+}
